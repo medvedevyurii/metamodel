@@ -14,3 +14,4 @@ for (menuItem of menuItems){
             document.getElementById('navbarSupportedContent').classList.remove('show');
     };
 };
+
