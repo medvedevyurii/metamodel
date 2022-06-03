@@ -6,7 +6,7 @@ frame.onload = function(){
 }
 
 // Скрытие бургер-меню после нажатия
-let menuItems=document.querySelectorAll('.nav-link');
+let menuItems=document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
 for (menuItem of menuItems){
         menuItem.onclick=()=>{
             document.getElementById('button-menu').classList.add('collapsed');
@@ -14,3 +14,4 @@ for (menuItem of menuItems){
             document.getElementById('navbarSupportedContent').classList.remove('show');
     };
 };
+
